@@ -1,0 +1,7 @@
+.vscode
+*.ass
+*.srt
+ass2srt
+build
+dist
+ass2srt.egg-info
