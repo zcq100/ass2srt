@@ -2,6 +2,11 @@
 
 A tool that convert .ass subtitles to .srt
 
+### Install
+```
+pip install ass2srt
+```
+
 $ python ass2srt.py -h
 ```
 usage: ass2srt.py [-h] [-s {zh,en,fr,de}] [-l {0,1,2}] [-i] file
@@ -16,10 +21,14 @@ optional arguments:
   -l {0,1,2}, --line {0,1,2}
                         keep double subtitles
   -i, --info            display subtitles infomation
+  -o OUT, --out OUT     output file name
 
 ```
 
 ### Example :
 ```
-python ass2srt.py Movies.S01.E01.Name.ass
+ass2srt Movies.S01.E01.Name.ass
 ```
+
+
+
