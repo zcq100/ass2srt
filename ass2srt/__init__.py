@@ -1,0 +1,1 @@
+from .ass2srt import Ass2srt,main
