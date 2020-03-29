@@ -7,8 +7,10 @@ A tool that convert .ass subtitles to .srt
 pip install ass2srt
 ```
 
-$ python ass2srt.py -h
+### Usage
 ```
+$ ass2srt -h
+
 usage: ass2srt.py [-h] [-s {zh,en,fr,de}] [-l {0,1,2}] [-i] file
 
 positional arguments:
@@ -30,5 +32,19 @@ optional arguments:
 ass2srt Movies.S01.E01.Name.ass
 ```
 
+### Used as a Library
 
+You can use asstosrt on your program easily.
+```
+import ass2srt
+subtitles=ass2srt.Ass2srt("Movies.S01E01.Name.ass")
+subtitles.to_srt()
+```
 
+### License
+
+MIT License
+
+### Bugs and Issues
+
+Please visit [GitHub](https://github.com/zcq100/ass2srt).
