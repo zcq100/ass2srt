@@ -5,3 +5,4 @@ ass2srt
 build
 dist
 ass2srt.egg-info
+__pycache__
