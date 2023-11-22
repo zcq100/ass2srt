@@ -27,7 +27,7 @@ class Ass2srt:
                 node = line.split(",")
                 node[1] = timefmt(node[1])
                 node[2] = timefmt(node[2])
-                node[9] = re.sub(r'{.*}', "", node[9]).strip()
+                node[9] = re.sub(r'{[^}]*}', "", node[9]).strip()
                 node[9] = re.sub(r'\\N', "\n", node[9])
                 self.nodes.append(node)
                 # print(f"{node[1]}-->{node[2]}:{node[9]}\n")
